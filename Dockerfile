@@ -1,17 +1,17 @@
-FROM python:3.8.8
+FROM python:3.9.7
 
 RUN echo "testing123"
 
 WORKDIR /home/
 
-RUN git clone https://github.com/lee-JunR/accounteapi.git
+RUN git clone https://github.com/TKJung/Account-API.git
 
-WORKDIR /home/accounteapi/
+WORKDIR /home/Account-API/
 
 RUN pip install -r requirements.txt
 
 RUN python manage.py migrate
 
-EXPOSE 5050
+EXPOSE 3030
 
-CMD ["python", "manage.py", "runserver", "0.0.0.0:5050"]
+CMD ["python", "manage.py", "runserver", "127.0.0.1:3030"]

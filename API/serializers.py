@@ -1,11 +1,9 @@
 from rest_framework import serializers
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
-
-
-# 회원가입
 from .models import Profile
 
+# 회원가입
 
 class CreateUserSerializer(serializers.ModelSerializer):
     class Meta:

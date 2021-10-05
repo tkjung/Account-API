@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-33yfu@dq(s!vidk($lqf_n#padmj!x(_ng5mw&2=q4u66m903h
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['host.docker.internal','127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1', '0.0.0.0', '211.252.86.70']
 
 
 # Application definition
